@@ -1,3 +1,5 @@
+### If you want to run this script yourself with your own changes, run: python git_colors.py languages.yml <whatever.md>
+
 | Language | Color | Type | Extensions |
 | --- | --- | --- | --- |
 | 1C Enterprise | ![#814CCC](https://placehold.co/15x15/814CCC/814CCC.png) `#814CCC` | programming | `['.bsl', '.os']` |
