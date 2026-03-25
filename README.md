@@ -1,4 +1,5 @@
-### If you want to run this script yourself with your own changes, run: python git_colors.py languages.yml <whatever.md>
+###### If you want to run this script yourself with your own changes, run: 
+###### python git_colors.py languages.yml <whatever.md>
 
 | Language | Color | Type | Extensions |
 | --- | --- | --- | --- |
