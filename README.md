@@ -1,6 +1,3 @@
-###### If you want to run this script yourself with your own changes, run: 
-###### python git_colors.py languages.yml <whatever.md>
-
 | Language | Color | Type | Extensions |
 | --- | --- | --- | --- |
 | 1C Enterprise | ![#814CCC](https://placehold.co/15x15/814CCC/814CCC.png) `#814CCC` | programming | `['.bsl', '.os']` |
@@ -667,3 +664,6 @@
 | vCard | ![#ee2647](https://placehold.co/15x15/ee2647/ee2647.png) `#ee2647` | data | `['.vcf']` |
 | wisp | ![#7582D1](https://placehold.co/15x15/7582D1/7582D1.png) `#7582D1` | programming | `['.wisp']` |
 | xBase | ![#403a40](https://placehold.co/15x15/403a40/403a40.png) `#403a40` | programming | `['.prg', '.ch', '.prw']` |
+
+###### If you want to run this script yourself with your own changes, run: 
+###### python git_colors.py languages.yml <whatever.md>
