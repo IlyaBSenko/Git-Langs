@@ -668,5 +668,5 @@
 ##### If you want to run this script yourself with your own changes, then:
 ##### 1: Change whatver you want, then
 ##### 2: Run: python git_colors.py languages.yml <whatever.md>
-##### 3: Press Ctr + Shift + V to preview the rendered .md file that you make
+##### 3: Press Ctr + Shift + V to preview the rendered markdown file that you make
 ###### Some of the colors might show better through your .md file
