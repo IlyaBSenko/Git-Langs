@@ -665,5 +665,6 @@
 | wisp | ![#7582D1](https://placehold.co/15x15/7582D1/7582D1.png) `#7582D1` | programming | `['.wisp']` |
 | xBase | ![#403a40](https://placehold.co/15x15/403a40/403a40.png) `#403a40` | programming | `['.prg', '.ch', '.prw']` |
 
-###### If you want to run this script yourself with your own changes, run: 
-###### python git_colors.py languages.yml <whatever.md>
+###### If you want to run this script yourself with your own changes, then:
+###### 1: Change whatver you want, then
+###### 2: Run: python git_colors.py languages.yml <whatever.md>
