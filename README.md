@@ -669,4 +669,4 @@
 ##### 1: Change whatver you want, then
 ##### 2: Run: python git_colors.py languages.yml <whatever.md>
 ##### 3: Press Ctr + Shift + V to preview the rendered markdown file that you make
-###### Some of the darker colors WILL show better through your .md file (If your github is in darkmode)
+###### Some of the darker colors WILL show better through your .md file (Since Github is is darkmode by default, some of the darker colors are harder to see, if you care that much)
