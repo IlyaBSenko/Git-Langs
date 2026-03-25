@@ -39,7 +39,7 @@ def main():
     out.write(md_output)
     out.close()
     
-    print("YO CHILL" + outfile)
+    print("YO CHILL CHECK " + outfile)
 
 if __name__ == "__main__":
     main()
