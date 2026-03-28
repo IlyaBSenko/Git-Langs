@@ -1,3 +1,7 @@
+*.md linguist-language=Markdown
+*.md linguist-documentation=false
 *.md linguist-detectable=true
 *.yml linguist-detectable=true
+*.svg linguist-language=XML
+*.svg linguist-generated=false
 *.svg linguist-detectable=true
