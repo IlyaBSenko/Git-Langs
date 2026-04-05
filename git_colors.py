@@ -3,7 +3,7 @@ import sys
 import yaml
 
 # install pyyaml with pip or this won't work
-# usage: python script.py languages.yml output.md
+# usage: python git_colors.py languages.yml output.md
 
 def main():
     if len(sys.argv) < 3:
@@ -20,6 +20,10 @@ def main():
     md_output = "| Language | Color | Type | Extensions |\n"
     md_output += "| --- | --- | --- | --- |\n"
 
+    prog_total = 0
+    data_total = 0
+    markup_total = 0
+    prose_total = 0
     for lang in data:
         info = data[lang]
         
@@ -35,11 +39,26 @@ def main():
             row = f"| {lang} | {color_swatch} `{color}` | {l_type} | `{exts}` |\n"
             md_output += row
 
+            # for curiosity reasons:
+            if l_type == "programming":
+                prog_total += 1
+            if l_type == "data":
+                data_total += 1
+            if l_type == "markup":
+                markup_total += 1
+            if l_type == "prose":
+                prose_total += 1
+    print("Programming total: ", prog_total)
+    print("Data total: ", data_total)
+    print("Markup total: ", markup_total)
+    print("Prose total: ", prose_total)
+
+
     out = open(outfile, 'w')
     out.write(md_output)
     out.close()
     
-    print("Yo chill check " + outfile)
+    print("Check " + outfile)
 
 if __name__ == "__main__":
     main()
