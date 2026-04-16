@@ -666,7 +666,7 @@
 | xBase | ![#403a40](https://placehold.co/15x15/403a40/403a40.png) `#403a40` | programming | `['.prg', '.ch', '.prw']` |
 
 ##### If you want to run this script yourself with your own changes, then:
-##### 1: Change whatver you want, then
+##### 1: Change whatever you want, then
 ##### 2: Run: python git_colors.py languages.yml <whatever.md>
 ##### 3: Press Ctr + Shift + V to preview the rendered markdown file that you make
 ###### Some of the darker colors WILL show better through your .md file (Since Github is is darkmode by default, some of the darker colors are harder to see.)
