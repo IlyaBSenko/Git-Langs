@@ -1,6 +1,7 @@
-import os
+# import os
 import sys
 import yaml
+from urllib.parse import quote # url encode for the lang name for Wikipedia (handles spaces and special chars?)
 
 # install pyyaml with pip or this won't work
 # usage: python git_colors.py languages.yml output.md
@@ -32,11 +33,15 @@ def main():
             l_type = info["type"]
             exts = info.get("extensions", "none")
 
-            # just use a colored circle emoji or a simple text box 
-            # instead of making 500 separate SVG files lol
-            color_swatch = f"![{color}](https://placehold.co/15x15/{color.replace('#', '')}/{color.replace('#', '')}.png)"
+            
+            # color_swatch = f"![{color}](https://placehold.co/15x15/{color.replace('#', '')}/{color.replace('#', '')}.png)"
+
+            # row = f"| {lang} | {color_swatch} `{color}` | {l_type} | `{exts}` |\n"
+            wiki_url = f"https://en.wikipedia.org/wiki/{quote(lang)}"
+            color_swatch = f"[![{color}](https://placehold.co/15x15/{color.replace('#', '')}/{color.replace('#', '')}.png)]({wiki_url})"
 
             row = f"| {lang} | {color_swatch} `{color}` | {l_type} | `{exts}` |\n"
+            
             md_output += row
 
             # for curiosity reasons:
